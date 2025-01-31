@@ -17,6 +17,39 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int* a, int* b, int* c, int* d) {
+	int temp;
 
+	if (rand() % 2 == 0) {
+		temp = *a;
+		*a = *b;
+		*b = temp;
+	}
+	if (rand() % 2 == 0) {
+		temp = *a;
+		*a = *c;
+		*c = temp;
+	}
+	if (rand() % 2 == 0) {
+		temp = *a;
+		*a = *d;
+		*d = temp;
+	}
+	if (rand() % 2 == 0) {
+		temp = *b;
+		*b = *c;
+		*c = temp;
+	}
+	if (rand() % 2 == 0) {
+		temp = *b;
+		*b = *d;
+		*d = temp;
+	}
+	if (rand() % 2 == 0) {
+		temp = *c;
+		*c = *d;
+		*d = temp;
+	}
+}
 //Do not modify the code above this line
 //Write definition of shuffle() using pointer after this line. 
